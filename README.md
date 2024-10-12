@@ -28,6 +28,11 @@ Tools and integrations designed for developers to enhance productivity and strea
 ### Comprehensive Support
 Access to dedicated customer support to resolve issues promptly and ensure a smooth user experience.
 
+## Experimental Features
+
+### Stripe Payment (Experimental)
+Our Stripe payment feature is currently under development. To try it out, create a Stripe account and replace Stripe keys in `backend/Stripe/controller/subscriptionController.js` along with `firebaseSDK.json`.
+
 ## Features
 
 ### Landing Page
@@ -65,7 +70,6 @@ Transparent and flexible pricing options tailored to different user needs.
 - **Firebase** - Backend as a Service (BaaS) for authentication and database
 - **Netlify** - Hosting platform
 
-
 ## Running the Frontend
 
 Follow these steps to set up and run the frontend of OmniGPT:
@@ -75,27 +79,66 @@ Follow these steps to set up and run the frontend of OmniGPT:
 Make sure you have the following installed on your machine:
 - **Node.js** (version 14.x or later)
 - **npm** (version 6.x or later)
-- **Firebase** (Create a project and Setup the authentication)
+- **Firebase** (Create a project and setup authentication)
 
 ### Installation
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/yourusername/omni-gpt.git
+    ```bash
+    git clone https://github.com/yourusername/omni-gpt.git
+    ```
+
 2. **Navigate to the Project Directory**
 
-   ```bash
-   cd csci5193-geeksquad-omnigpt/frontend/omnigpt/
-3. **Install Dependencies**
+    ```bash
+    cd csci5193-geeksquad-omnigpt/frontend/omnigpt/
+    ```
+
+3. **Create an `.env` File**
+
+    In the root directory, create an `.env` file and add the following variables with their corresponding values:
+
+    ```plaintext
+    VITE_GEMINI_KEY = [Your Gemini Key]
+    VITE_LLAMA_API_ENDPOINT = [Your Llama API Endpoint]
+
+    VITE_FIREBASE_API_KEY = [Your Firebase API Key]
+    VITE_FIREBASE_AUTH_DOMAIN = [Your Firebase Auth Domain]
+    VITE_FIREBASE_PROJECT_ID = [Your Firebase Project ID]
+    VITE_FIREBASE_STORAGE_BUCKET = [Your Firebase Storage Bucket]
+    VITE_FIREBASE_MESSAGING_SENDER_ID = [Your Firebase Messaging Sender ID]
+    VITE_FIREBASE_APP_ID = [Your Firebase App ID]
+    VITE_FIREBASE_MEASUREMENT_ID = [Your Firebase Measurement ID]
+    ```
+
+4. **Set up the Llama API Endpoint**
+
+    - Deploy a Lambda function with files from `backend/Llama`.
+    - Update the API key in `index.mjs` following the guide at [Meta Llama Documentation](https://replicate.com/meta/meta-llama-3.1-405b-instruct).
+
+5. **Firebase Setup**
+
+    Create a Firebase project and update the Firebase-related environment variables in the `.env` file.
+
+6. **Obtain a Gemini API Key**
+
+    Register and get your Gemini key from [Google's Gemini API Documentation](https://ai.google.dev/gemini-api/docs/api-key).
+
+7. **Install Dependencies**
 
     ```bash
     npm install
-4. **Start the Server**
+    ```
+
+8. **Start the Server**
 
     ```bash
     npm start
+    ```
+
 ### Building for Production
+
 To build the project for production, use:
 
 ```bash
