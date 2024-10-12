@@ -11,8 +11,6 @@ import logoWhite from "../assets/images/logos/logo-no-background.svg";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { unstable_batchedUpdates } from "react-dom";
-import { analytics } from "../config/firebase";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -38,7 +36,7 @@ export default function Navbar() {
             const userData = userDoc.data();
             unstable_batchedUpdates(() => {
               setUser(userData.name);
-              setIsSubscribed(!!userData.subscriptionDetails);
+              setIsSubscribed(true);
             });
           }
         } else {

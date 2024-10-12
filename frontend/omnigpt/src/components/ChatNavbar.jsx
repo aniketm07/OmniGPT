@@ -36,7 +36,7 @@ export default function ChatNavbar({toggleChatList}) {
             const userData = userDoc.data();
             unstable_batchedUpdates(() => {
               setUser(userData.name);
-              setIsSubscribed(!!userData.subscriptionDetails);
+              setIsSubscribed(true);
             });
           }
         } else {
