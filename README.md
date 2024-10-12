@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./frontend/omnigpt/src/assets/images/logos/logo-no-background.svg" alt="ClickClick Logo" width=150 height=150>
+</div>
+
 # OmniGPT
 
 **Uniting Every Perspective, Amplifying Every Insight**
@@ -7,6 +11,17 @@ Welcome to **OmniGPT**, your one-stop platform for accessing multiple GPT models
 ## Deployed
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9e4915f9-eaea-45f9-b2b7-64fca4a26198/deploy-status)](https://app.netlify.com/sites/omnigpt-geeks/deploys)
 Access OmniGPT Here ⮕ [OmniGPT](https://omnigpt-geeks.netlify.app/)
+
+<h2 align="center">💻 Tech Stack</h2>
+<p align="center">
+    <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+    <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
+    <img alt="NPM" src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white">
+    <img alt="AWS Lambda" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white">
+    <img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase">
+    <img alt="Netlify" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7">
+    <img alt="VITE" src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white">
+</p>
 
 ## Everything You Need
 
@@ -60,15 +75,6 @@ Transparent and flexible pricing options tailored to different user needs.
 - **Parth Karkhanis** [B00959176]
 - **Shubham Pawar** [B00969363]
 - **Shreya Kapoor** [B00957587]
-
-## Built With
-
-- **React** - The web framework used
-- **npm** - Dependency Management
-- **Tailwind CSS** - CSS Framework
-- **Vite** - Local Deployment Server
-- **Firebase** - Backend as a Service (BaaS) for authentication and database
-- **Netlify** - Hosting platform
 
 ## Running the Frontend
 
