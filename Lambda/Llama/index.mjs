@@ -1,7 +1,7 @@
 
 import Replicate from 'replicate';
 
-const REPLICATE_API_TOKEN = 'r8_KLHNbvo6TUqYTVdAsx7iBA9oGOQvBJX0yOH2C';
+const REPLICATE_API_TOKEN = '<paste-your-token-here>';
 
 const replicate = new Replicate({
   auth: REPLICATE_API_TOKEN,
